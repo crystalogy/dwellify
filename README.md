@@ -27,7 +27,7 @@ A map-based web application for discovering rental properties with accessibility
 
 ## Installation
 ```
-git clone https://github.com/yourrepo/housing-search.git
+git clone https://github.com/crystalogy/housing-search.git
 cd housing-search
 npm install leaflet bootstrap
 ```
