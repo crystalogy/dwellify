@@ -26,12 +26,12 @@ async function searchLocation() {
     // Get coordinates from Nominatim
     const response = await fetch(
       `https://nominatim.openstreetmap.org/search?format=json&q=${encodeURIComponent(
-        address
+        searchText
       )}&countrycodes=us`
     );
 
     const data = await response.json();
-    console.log("API Response:", data); // Add this line
+    console.log("API Response:", data); 
 
     if (data.length > 0) {
       // Move map to found location
@@ -51,7 +51,7 @@ async function searchLocation() {
 let markers = [];
 
 function updateMarkers(type) {
-  console.log("Selected type:", type); // Debugging line
+
 
   // Remove existing markers
   markers.forEach((marker) => map.removeLayer(marker));
@@ -187,7 +187,7 @@ async function getCoordinates(address) {
   }
 }
 
-// 6. UPDATE THE SAVE BUTTON FUNCTION
+// UPDATE THE SAVE BUTTON FUNCTION
 async function saveNewProperty() {
   const address = document.getElementById("address").value;
 
@@ -195,7 +195,6 @@ async function saveNewProperty() {
   const coords = await getCoordinates(address);
   if (!coords) return; // Stop if no coordinates
 
-  // Rest of your existing code (create object, push to array, etc.)
   const newProperty = {
     address: address,
     price: `$${document.getElementById("price").value}/mo`,
@@ -216,7 +215,7 @@ async function saveNewProperty() {
   // Update map markers
   updateMarkers("All");
 
-  // Reset form and close modal
+ 
   document.getElementById("addPropertyModal").querySelector("form").reset();
 }
 
@@ -246,7 +245,7 @@ document.addEventListener("scroll", () => {
 
   const currentScroll = window.scrollY;
 
-  const headerHeight = 200; // Height of the fixed header
+  const headerHeight = 200;
 
   // Scroll down to mainContainer from banner
   if (
