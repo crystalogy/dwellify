@@ -26,11 +26,14 @@ A map-based web application for discovering rental properties with accessibility
 - **Geocoding**: Nominatim API
 
 ## Installation
+```
 git clone https://github.com/yourrepo/housing-search.git
 cd housing-search
 npm install leaflet bootstrap
+```
 
 Requires modern browser with JavaScript enabled
+```
 
 ## Usage
 1. Search by address/zipcode
