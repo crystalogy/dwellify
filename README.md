@@ -33,7 +33,7 @@ npm install leaflet bootstrap
 ```
 
 Requires modern browser with JavaScript enabled
-```
+
 
 ## Usage
 1. Search by address/zipcode
@@ -42,6 +42,7 @@ Requires modern browser with JavaScript enabled
 
 ## Data Structure
 Properties stored in `propertyData.js`:
+```
 {
 address: "590 Candlewyck Road, Lancaster, PA 17601",
 price: "$1,800/mo",
@@ -52,12 +53,15 @@ deposit: "$0",
 monthlyFee: "$30",
 restrictions: "None"
 },
+```
 
 ## File Structure
+```
 ├── index.html # Main interface
 ├── script.js # Map logic & interactions
 ├── propertyData.js # Rental listings database
 └── style.css # Custom styling
+```
 
 ## License
 MIT License - see [LICENSE](LICENSE)
