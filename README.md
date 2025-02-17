@@ -63,9 +63,6 @@ restrictions: "None"
 └── style.css # Custom styling
 ```
 
-## License
-MIT License - see [LICENSE](LICENSE)
-
 ## Credits
 - Map data © [OpenStreetMap](https://www.openstreetmap.org/copyright) contributors
 - UI icons from Bootstrap Icons
