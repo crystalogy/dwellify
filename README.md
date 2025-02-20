@@ -4,6 +4,7 @@
 
 A map-based web application for discovering rental properties with accessibility and pet-friendly filters. Built with Leaflet.js, Bootstrap, and OpenStreetMap data.
 
+https://github.com/user-attachments/assets/3fff3558-a468-4d6a-9cd8-03b858649846
 
 ## Key Features
 - **Interactive Map Interface**  
